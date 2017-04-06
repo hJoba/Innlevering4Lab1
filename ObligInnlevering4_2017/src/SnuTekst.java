@@ -15,8 +15,11 @@ public class SnuTekst {
 			newTekst+=chars[i];
 		 	antall++;
 		}
-		System.out.println("Teksten baklengs er " + newTekst + " det er "+  antall + " bokstaver.");
-		baklengs(tekst);
+		baklengs(newTekst,antall);
+	}
+	public static void baklengs(String tekst, int siste) {
+		System.out.println("Teksten baklengs er " + tekst + " det er "+  siste + " bokstaver.");
+		baklengs(tekst,siste);
 	}
 	
 	public static void main(String[] args) {
